@@ -1,0 +1,1939 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>83/0/86</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 08 15:24:32 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>1123 seconds (1123384 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.28 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;LAPTOP-K6DCR1DD&apos;, ip: &apos;192.168.0.140&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:58089}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\hp\AppData\Local\Temp\scoped_dir30692_27504}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.131, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f81c00073c3b7ae731c756fac8e9ec4b
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
+	at com.shopcartt.qa.Base.TestBase.Intialization(TestBase.java:53)
+	at com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp(DashBoardTestCases.java:27)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1230955136", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1230955136'><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.28 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;LAPTOP-K6DCR1DD&apos;, ip: &apos;192.168.0.140&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:58089}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\hp\AppData\Local\Temp\scoped_dir30692_27504}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.131, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f81c00073c3b7ae731c756fac8e9ec4b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
+	at com.shopcartt.qa.Base.TestBase.Intialization(TestBase.java:53)
+	at com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp(DashBoardTestCases.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases.SetUp()'><b>SetUp</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases</td>
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: element not interactable
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.06 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;LAPTOP-K6DCR1DD&apos;, ip: &apos;192.168.0.140&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:59963}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\hp\AppData\Local\Temp\scoped_dir11480_29491}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.131, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bf32dfed6476325e9d73562b3687984e
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy6.click(Unknown Source)
+	at com.shopcartt.qa.Pages.DashBoard.ValidateCatalog_MonitoringPageClick(DashBoard.java:631)
+	at com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases.SetUp(Catalog_MonitoringTestCases.java:32)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace662925691", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace662925691'><pre>org.openqa.selenium.ElementNotVisibleException: element not interactable
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.06 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;LAPTOP-K6DCR1DD&apos;, ip: &apos;192.168.0.140&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:59963}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\hp\AppData\Local\Temp\scoped_dir11480_29491}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.131, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bf32dfed6476325e9d73562b3687984e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy6.click(Unknown Source)
+	at com.shopcartt.qa.Pages.DashBoard.ValidateCatalog_MonitoringPageClick(DashBoard.java:631)
+	at com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases.SetUp(Catalog_MonitoringTestCases.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases@7f63425a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.DashBoardSetUp()'><b>DashBoardSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases.SetUp()'><b>SetUp</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases@7f63425a</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.CloseSetUp()'><b>CloseSetUp</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases.Quit()'><b>Quit</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases@7f63425a</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases.Quit()'><b>Quit</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases@7f63425a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestBlankEmail_CorrectPass()'><b>TestBlankEmail_CorrectPass</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestBlankEmail_InvalidPassword()'><b>TestBlankEmail_InvalidPassword</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestBlankLogin()'><b>TestBlankLogin</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases.TestCatalog_MonitoringTitle()'><b>TestCatalog_MonitoringTitle</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases@7f63425a</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases.TestCategories_AddNewCategoryButtonClick()'><b>TestCategories_AddNewCategoryButtonClick</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases</td>
+<td></td>
+<td>4</td>
+<td>com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases@3f3afe78</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases.TestCategories_AddNewCategoryButtonColor()'><b>TestCategories_AddNewCategoryButtonColor</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases@3f3afe78</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases.TestCategories_AddNewCategoryButtonDisplayed()'><b>TestCategories_AddNewCategoryButtonDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases@3f3afe78</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases.TestCategories_AddNewCategoryText()'><b>TestCategories_AddNewCategoryText</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases@3f3afe78</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases.TestCategories_AddNewCategoryTextClick()'><b>TestCategories_AddNewCategoryTextClick</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases</td>
+<td></td>
+<td>3</td>
+<td>com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases@3f3afe78</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases.TestCategories_AddNewCategoryTextDisplayed()'><b>TestCategories_AddNewCategoryTextDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases@3f3afe78</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases.TestCategories_CategoriesDisplayed()'><b>TestCategories_CategoriesDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases@3f3afe78</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases.TestCategories_CategoriesText()'><b>TestCategories_CategoriesText</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases@3f3afe78</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases.TestCategories_CategoriesTitleDisplayed()'><b>TestCategories_CategoriesTitleDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases@3f3afe78</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestCheckBoxNotSelected()'><b>TestCheckBoxNotSelected</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestCheckBoxSelected()'><b>TestCheckBoxSelected</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestCheckStayLoggedInDisplay()'><b>TestCheckStayLoggedInDisplay</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestCopyRightClick()'><b>TestCopyRightClick</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestCopyRightDisplayed()'><b>TestCopyRightDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestCopyRightText()'><b>TestCopyRightText</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestCorrectEmailFormat_BlankPassword()'><b>TestCorrectEmailFormat_BlankPassword</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestCorrectEmailFormat_CorrectPassword()'><b>TestCorrectEmailFormat_CorrectPassword</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestCorrectEmail_4DigitPassword()'><b>TestCorrectEmail_4DigitPassword</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestCorrectEmail_BlankPassword()'><b>TestCorrectEmail_BlankPassword</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestCorrectEmail_InValidPassword()'><b>TestCorrectEmail_InValidPassword</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestCorrectEmail_PasswordMorethan4()'><b>TestCorrectEmail_PasswordMorethan4</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestCorrectLogin()'><b>TestCorrectLogin</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardLogo()'><b>TestDashBoardLogo</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>9</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardLogoClick()'><b>TestDashBoardLogoClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>8</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardShopNameText()'><b>TestDashBoardShopNameText</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>11</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardVersionClick()'><b>TestDashBoardVersionClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>9</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardVersionDisplayed()'><b>TestDashBoardVersionDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>5</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardVersionText()'><b>TestDashBoardVersionText</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>7</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestEmailPlaceHolder()'><b>TestEmailPlaceHolder</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestInvalidEmail_BlankPassword()'><b>TestInvalidEmail_BlankPassword</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestInvalidEmail_CorrectPassword()'><b>TestInvalidEmail_CorrectPassword</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestInvalidEmail_Password()'><b>TestInvalidEmail_Password</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestLogInButtonColor()'><b>TestLogInButtonColor</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestLogInButtonText()'><b>TestLogInButtonText</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases.TestMonitoring_MonitoringClick()'><b>TestMonitoring_MonitoringClick</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases@7f63425a</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases.TestMonitoring_MonitoringDisplayed()'><b>TestMonitoring_MonitoringDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases@7f63425a</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestPasswordPlaceHolder()'><b>TestPasswordPlaceHolder</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_ProductsTestCases.TestProductsTitle()'><b>TestProductsTitle</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_ProductsTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_ProductsTestCases@880ec60</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_ProductsTestCases.TestProducts_AddNewProductButtonClick()'><b>TestProducts_AddNewProductButtonClick</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_ProductsTestCases</td>
+<td></td>
+<td>5</td>
+<td>com.Shopcartt.qa.Tests.Catalog_ProductsTestCases@880ec60</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_ProductsTestCases.TestProducts_AddNewProductButtonColor()'><b>TestProducts_AddNewProductButtonColor</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_ProductsTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_ProductsTestCases@880ec60</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_ProductsTestCases.TestProducts_AddNewProductButtonDisplayed()'><b>TestProducts_AddNewProductButtonDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_ProductsTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_ProductsTestCases@880ec60</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_ProductsTestCases.TestProducts_AddNewProductText()'><b>TestProducts_AddNewProductText</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_ProductsTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_ProductsTestCases@880ec60</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_ProductsTestCases.TestProducts_AddNewProductTextClick()'><b>TestProducts_AddNewProductTextClick</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_ProductsTestCases</td>
+<td></td>
+<td>4</td>
+<td>com.Shopcartt.qa.Tests.Catalog_ProductsTestCases@880ec60</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_ProductsTestCases.TestProducts_AddNewProductTextDisplayed()'><b>TestProducts_AddNewProductTextDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_ProductsTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_ProductsTestCases@880ec60</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_ProductsTestCases.TestProducts_CatalogClick()'><b>TestProducts_CatalogClick</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_ProductsTestCases</td>
+<td></td>
+<td>1</td>
+<td>com.Shopcartt.qa.Tests.Catalog_ProductsTestCases@880ec60</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_ProductsTestCases.TestProducts_CatalogDisplayed()'><b>TestProducts_CatalogDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_ProductsTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_ProductsTestCases@880ec60</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_ProductsTestCases.TestProducts_CatalogText()'><b>TestProducts_CatalogText</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_ProductsTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_ProductsTestCases@880ec60</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_ProductsTestCases.TestProducts_PageTitleDisplayed()'><b>TestProducts_PageTitleDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_ProductsTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_ProductsTestCases@880ec60</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_ProductsTestCases.TestProducts_ProductsClick()'><b>TestProducts_ProductsClick</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_ProductsTestCases</td>
+<td></td>
+<td>1</td>
+<td>com.Shopcartt.qa.Tests.Catalog_ProductsTestCases@880ec60</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_ProductsTestCases.TestProducts_ProductsDisplayed()'><b>TestProducts_ProductsDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_ProductsTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_ProductsTestCases@880ec60</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_ProductsTestCases.TestProducts_ProductsText()'><b>TestProducts_ProductsText</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_ProductsTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_ProductsTestCases@880ec60</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_ProductsTestCases.TestProducts_RecommendedModulesAndServicesButtonColor()'><b>TestProducts_RecommendedModulesAndServicesButtonColor</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_ProductsTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_ProductsTestCases@880ec60</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_ProductsTestCases.TestProducts_RecommendedModulesAndServicesButtonDisplayed()'><b>TestProducts_RecommendedModulesAndServicesButtonDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_ProductsTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_ProductsTestCases@880ec60</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_ProductsTestCases.TestProducts_RecommendedModulesAndServicesText()'><b>TestProducts_RecommendedModulesAndServicesText</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_ProductsTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_ProductsTestCases@880ec60</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_ProductsTestCases.TestProducts_RecommendedModulesAndServicesTextClick()'><b>TestProducts_RecommendedModulesAndServicesTextClick</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_ProductsTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_ProductsTestCases@880ec60</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_ProductsTestCases.TestProducts_RecommendedModulesAndServicesTextDisplayed()'><b>TestProducts_RecommendedModulesAndServicesTextDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_ProductsTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_ProductsTestCases@880ec60</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestShopcarttImg()'><b>TestShopcarttImg</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestShopcarttLoginPage()'><b>TestShopcarttLoginPage</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestShopcarttName()'><b>TestShopcarttName</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestShopcarttPageHeading()'><b>TestShopcarttPageHeading</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestShopcarttVersion()'><b>TestShopcarttVersion</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestShopcarttVersionText()'><b>TestShopcarttVersionText</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestStayLoggedInText()'><b>TestStayLoggedInText</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestfacebookClick()'><b>TestfacebookClick</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>3</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestfacebookColor()'><b>TestfacebookColor</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestfacebookDisplayed()'><b>TestfacebookDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestforgetPasswordClick()'><b>TestforgetPasswordClick</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>2</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestforgetPasswordDisplayed()'><b>TestforgetPasswordDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestforgetPasswordText()'><b>TestforgetPasswordText</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases.TestgetCatagoriesTitle()'><b>TestgetCatagoriesTitle</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases@3f3afe78</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestgithubClick()'><b>TestgithubClick</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>5</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestgithubColor()'><b>TestgithubColor</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestgithubDisplayed()'><b>TestgithubDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestgooglePlusClick()'><b>TestgooglePlusClick</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>4</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestgooglePlusColor()'><b>TestgooglePlusColor</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TestgooglePlusDisplayed()'><b>TestgooglePlusDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TesttwitterClick()'><b>TesttwitterClick</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>6</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TesttwitterColor()'><b>TesttwitterColor</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.LoginPageTestCases.TesttwitterDisplayed()'><b>TesttwitterDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.LoginPageTestCases@34ce8af7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestAdministrationTitleClick()'><b>TestAdministrationTitleClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestAdministrationTitleDisplayed()'><b>TestAdministrationTitleDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestAdministrationTitleText()'><b>TestAdministrationTitleText</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestAdvancedParametersTitleClick()'><b>TestAdvancedParametersTitleClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestAdvancedParametersTitleDisplayed()'><b>TestAdvancedParametersTitleDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestAdvancedParametersTitleText()'><b>TestAdvancedParametersTitleText</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestCatalogClick()'><b>TestCatalogClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestCatalogDisplayed()'><b>TestCatalogDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestCatalogText()'><b>TestCatalogText</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestCatalog_AttachmentsPageClick()'><b>TestCatalog_AttachmentsPageClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestCatalog_CategoriesPageClick()'><b>TestCatalog_CategoriesPageClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestCatalog_ManufacturersPageClick()'><b>TestCatalog_ManufacturersPageClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestCatalog_MonitoringPageClick()'><b>TestCatalog_MonitoringPageClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestCatalog_ProductAttributesPageClick()'><b>TestCatalog_ProductAttributesPageClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestCatalog_ProductFeaturesPageClick()'><b>TestCatalog_ProductFeaturesPageClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestCatalog_ProductsPageClick()'><b>TestCatalog_ProductsPageClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestCatalog_SuppliersPageClick()'><b>TestCatalog_SuppliersPageClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestCatalog_TagsPageClick()'><b>TestCatalog_TagsPageClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestCustomersTitleClick()'><b>TestCustomersTitleClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestCustomersTitleDisplayed()'><b>TestCustomersTitleDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestCustomersTitleText()'><b>TestCustomersTitleText</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardCarttLogoClick()'><b>TestDashBoardCarttLogoClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardCarttLogoDisplayed()'><b>TestDashBoardCarttLogoDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardChainBrokenLogoDisplayed()'><b>TestDashBoardChainBrokenLogoDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardCustomersLogoClick()'><b>TestDashBoardCustomersLogoClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardCustomersLogoDisplayed()'><b>TestDashBoardCustomersLogoDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardDemoModeClick()'><b>TestDashBoardDemoModeClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardDemoModeDisplayed()'><b>TestDashBoardDemoModeDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardDemoModeText()'><b>TestDashBoardDemoModeText</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardEnvelopeLogoClick()'><b>TestDashBoardEnvelopeLogoClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardEnvelopeLogoDisplayed()'><b>TestDashBoardEnvelopeLogoDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardHelpClick()'><b>TestDashBoardHelpClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardHelpDisplayed()'><b>TestDashBoardHelpDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardHelpLogoClick()'><b>TestDashBoardHelpLogoClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardHelpLogoColor()'><b>TestDashBoardHelpLogoColor</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardHelpLogoDisplayed()'><b>TestDashBoardHelpLogoDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardHelpText()'><b>TestDashBoardHelpText</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardMarketPlaceClick()'><b>TestDashBoardMarketPlaceClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardMarketPlaceDisplayed()'><b>TestDashBoardMarketPlaceDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardMarketPlaceText()'><b>TestDashBoardMarketPlaceText</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardMyShopClick()'><b>TestDashBoardMyShopClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardMyShopDisplayed()'><b>TestDashBoardMyShopDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardMyShopText()'><b>TestDashBoardMyShopText</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardPageTitleDisplayed()'><b>TestDashBoardPageTitleDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardProfilePictureClick()'><b>TestDashBoardProfilePictureClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardProfilePictureDisplayed()'><b>TestDashBoardProfilePictureDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardQuickAccessClick()'><b>TestDashBoardQuickAccessClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardQuickAccessDisplayed()'><b>TestDashBoardQuickAccessDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardSearchDropDownClick()'><b>TestDashBoardSearchDropDownClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardShopNameClick()'><b>TestDashBoardShopNameClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardShopNameDisplayed()'><b>TestDashBoardShopNameDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardSmallDisplayed()'><b>TestDashBoardSmallDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardSmallTextClick()'><b>TestDashBoardSmallTextClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardSystemAdministratorClick()'><b>TestDashBoardSystemAdministratorClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardSystemAdministratorDisplayed()'><b>TestDashBoardSystemAdministratorDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardSystemAdministratorText()'><b>TestDashBoardSystemAdministratorText</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardToggleButtonColor()'><b>TestDashBoardToggleButtonColor</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardToggleButtonEnabled()'><b>TestDashBoardToggleButtonEnabled</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardTrophyLogoClick()'><b>TestDashBoardTrophyLogoClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestDashBoardTrophyLogoDisplayed()'><b>TestDashBoardTrophyLogoDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestLocalizationTitleClick()'><b>TestLocalizationTitleClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestLocalizationTitleDisplayed()'><b>TestLocalizationTitleDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestLocalizationTitleText()'><b>TestLocalizationTitleText</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestModulesAndServicesTitleClick()'><b>TestModulesAndServicesTitleClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestModulesAndServicesTitleDisplayed()'><b>TestModulesAndServicesTitleDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestModulesAndServicesTitleText()'><b>TestModulesAndServicesTitleText</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases.TestMonitoring_MonitoringText()'><b>TestMonitoring_MonitoringText</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases@7f63425a</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases.TestMonitoring_PageTitleDisplayed()'><b>TestMonitoring_PageTitleDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases@7f63425a</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestOrdersTitleClick()'><b>TestOrdersTitleClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestOrdersTitleDisplayed()'><b>TestOrdersTitleDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestOrdersTitleText()'><b>TestOrdersTitleText</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestPreferencesTitleClick()'><b>TestPreferencesTitleClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestPreferencesTitleDisplayed()'><b>TestPreferencesTitleDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestPreferencesTitleText()'><b>TestPreferencesTitleText</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestPriceRulesTitleClick()'><b>TestPriceRulesTitleClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestPriceRulesTitleDisplayed()'><b>TestPriceRulesTitleDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestPriceRulesTitleText()'><b>TestPriceRulesTitleText</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestSearchBoxClick()'><b>TestSearchBoxClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestSearchBoxDisplayed()'><b>TestSearchBoxDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestSearchBoxPlaceHolder()'><b>TestSearchBoxPlaceHolder</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestShippingTitleClick()'><b>TestShippingTitleClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestShippingTitleDisplayed()'><b>TestShippingTitleDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestShippingTitleText()'><b>TestShippingTitleText</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestStatsTitleClick()'><b>TestStatsTitleClick</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestStatsTitleDisplayed()'><b>TestStatsTitleDisplayed</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+<tr>
+<td title='com.Shopcartt.qa.Tests.DashBoardTestCases.TestStatsTitleText()'><b>TestStatsTitleText</b><br>Test class: com.Shopcartt.qa.Tests.DashBoardTestCases</td>
+<td></td>
+<td>0</td>
+<td>com.Shopcartt.qa.Tests.DashBoardTestCases@b684286</td></tr>
+</table><p>
+</body>
+</html>

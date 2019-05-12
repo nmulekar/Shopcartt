@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test">
+		<classes>
+			<class name="com.Shopcartt.qa.Tests.LoginPageTestCases" />
+			<class name="com.Shopcartt.qa.Tests.DashBoardTestCases" />
+			<class name="com.Shopcartt.qa.Tests.Catalog_ProductsTestCases" />
+			<class name="com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases" />
+			<class name="com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

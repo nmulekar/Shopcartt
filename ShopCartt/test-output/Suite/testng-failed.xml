@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="com.Shopcartt.qa.Tests.LoginPageTestCases"/>
+      <class name="com.Shopcartt.qa.Tests.DashBoardTestCases"/>
+      <class name="com.Shopcartt.qa.Tests.Catalog_ProductsTestCases"/>
+      <class name="com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases"/>
+      <class name="com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases">
+        <methods>
+          <include name="Quit"/>
+          <include name="Catalog_CategoriesSetup"/>
+        </methods>
+      </class> <!-- com.Shopcartt.qa.Tests.Catalog_CatagoriesTestCases -->
+      <class name="com.Shopcartt.qa.Tests.DashBoardTestCases">
+        <methods>
+          <include name="TestOrdersTitleClick"/>
+          <include name="TestPreferencesTitleDisplayed"/>
+          <include name="TestDashBoardQuickAccessClick"/>
+          <include name="TestDashBoardHelpLogoDisplayed"/>
+          <include name="TestDashBoardCustomersLogoDisplayed"/>
+          <include name="TestPreferencesTitleClick"/>
+          <include name="CloseSetUp"/>
+          <include name="TestDashBoardCustomersLogoClick"/>
+          <include name="TestDashBoardDemoModeDisplayed"/>
+          <include name="TestOrdersTitleDisplayed"/>
+          <include name="TestDashBoardHelpText"/>
+          <include name="TestPriceRulesTitleClick"/>
+          <include name="TestDashBoardSmallDisplayed"/>
+          <include name="TestDashBoardCarttLogoClick"/>
+          <include name="TestDashBoardHelpClick"/>
+          <include name="TestLocalizationTitleDisplayed"/>
+          <include name="TestLocalizationTitleClick"/>
+          <include name="TestSearchBoxDisplayed"/>
+          <include name="TestCustomersTitleText"/>
+          <include name="TestStatsTitleDisplayed"/>
+          <include name="TestDashBoardSystemAdministratorText"/>
+          <include name="TestDashBoardProfilePictureClick"/>
+          <include name="TestDashBoardHelpDisplayed"/>
+          <include name="TestAdministrationTitleClick"/>
+          <include name="TestCatalog_TagsPageClick"/>
+          <include name="TestSearchBoxClick"/>
+          <include name="TestModulesAndServicesTitleDisplayed"/>
+          <include name="TestModulesAndServicesTitleClick"/>
+          <include name="TestDashBoardSearchDropDownClick"/>
+          <include name="TestDashBoardTrophyLogoClick"/>
+          <include name="TestShippingTitleClick"/>
+          <include name="TestCatalog_CategoriesPageClick"/>
+          <include name="TestDashBoardSystemAdministratorDisplayed"/>
+          <include name="TestDashBoardTrophyLogoDisplayed"/>
+          <include name="TestCustomersTitleClick"/>
+          <include name="TestDashBoardMarketPlaceClick"/>
+          <include name="TestDashBoardMarketPlaceText"/>
+          <include name="TestAdvancedParametersTitleDisplayed"/>
+          <include name="TestDashBoardMarketPlaceDisplayed"/>
+          <include name="TestDashBoardSmallTextClick"/>
+          <include name="TestCatalog_MonitoringPageClick"/>
+          <include name="TestDashBoardToggleButtonEnabled"/>
+          <include name="TestDashBoardPageTitleDisplayed"/>
+          <include name="TestDashBoardMyShopClick"/>
+          <include name="TestDashBoardChainBrokenLogoDisplayed"/>
+          <include name="TestPriceRulesTitleText"/>
+          <include name="TestStatsTitleText"/>
+          <include name="TestCatalog_ProductAttributesPageClick"/>
+          <include name="TestDashBoardHelpLogoClick"/>
+          <include name="TestCatalog_ProductFeaturesPageClick"/>
+          <include name="TestDashBoardMyShopText"/>
+          <include name="TestOrdersTitleText"/>
+          <include name="TestSearchBoxPlaceHolder"/>
+          <include name="TestLocalizationTitleText"/>
+          <include name="TestModulesAndServicesTitleText"/>
+          <include name="TestAdministrationTitleDisplayed"/>
+          <include name="TestCatalogDisplayed"/>
+          <include name="TestPriceRulesTitleDisplayed"/>
+          <include name="TestCatalog_ManufacturersPageClick"/>
+          <include name="TestCatalog_ProductsPageClick"/>
+          <include name="DashBoardSetUp"/>
+          <include name="TestCatalog_SuppliersPageClick"/>
+          <include name="TestDashBoardHelpLogoColor"/>
+          <include name="TestShippingTitleText"/>
+          <include name="TestAdministrationTitleText"/>
+          <include name="TestDashBoardDemoModeText"/>
+          <include name="TestDashBoardShopNameDisplayed"/>
+          <include name="TestDashBoardQuickAccessDisplayed"/>
+          <include name="TestDashBoardCarttLogoDisplayed"/>
+          <include name="TestStatsTitleClick"/>
+          <include name="TestCatalogClick"/>
+          <include name="TestDashBoardProfilePictureDisplayed"/>
+          <include name="TestDashBoardMyShopDisplayed"/>
+          <include name="TestDashBoardSystemAdministratorClick"/>
+          <include name="TestPreferencesTitleText"/>
+          <include name="TestShippingTitleDisplayed"/>
+          <include name="TestDashBoardToggleButtonColor"/>
+          <include name="TestAdvancedParametersTitleClick"/>
+          <include name="TestDashBoardEnvelopeLogoClick"/>
+          <include name="TestCatalogText"/>
+          <include name="TestDashBoardDemoModeClick"/>
+          <include name="TestDashBoardEnvelopeLogoDisplayed"/>
+          <include name="TestAdvancedParametersTitleText"/>
+          <include name="TestCatalog_AttachmentsPageClick"/>
+          <include name="TestDashBoardShopNameClick"/>
+          <include name="TestCustomersTitleDisplayed"/>
+        </methods>
+      </class> <!-- com.Shopcartt.qa.Tests.DashBoardTestCases -->
+      <class name="com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases">
+        <methods>
+          <include name="SetUp"/>
+          <include name="Quit"/>
+          <include name="TestMonitoring_PageTitleDisplayed"/>
+          <include name="TestMonitoring_MonitoringText"/>
+        </methods>
+      </class> <!-- com.Shopcartt.qa.Tests.Catalog_MonitoringTestCases -->
+      <class name="com.Shopcartt.qa.Tests.Catalog_ProductsTestCases">
+        <methods>
+          <include name="Catalog_ProductsSetUp"/>
+          <include name="Catalog_ProductsQuit"/>
+        </methods>
+      </class> <!-- com.Shopcartt.qa.Tests.Catalog_ProductsTestCases -->
+      <class name="com.Shopcartt.qa.Tests.LoginPageTestCases">
+        <methods>
+          <include name="CloseSetUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Shopcartt.qa.Tests.LoginPageTestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
